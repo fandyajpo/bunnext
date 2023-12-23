@@ -58,15 +58,17 @@ export default function RootLayout({
       <head>
         <Script
           async
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-BG002TSTCV"
         />
         <Script
-          slot={` window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BG002TSTCV');`}
-        />
+          id="google-analytics"
+          strategy="afterInteractive"
+        >{` window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-BG002TSTCV');`}</Script>
       </head>
       <body className={inter.className}>
         <Drawer title="Fandy Ahmad">{children}</Drawer>

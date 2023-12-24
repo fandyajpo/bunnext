@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Footer from "@/components/Layout/Footer";
 import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Drawer from "@/components/Layout/Drawer";
@@ -73,6 +74,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Drawer title="Fandy Ahmad">{children}</Drawer>
         <SpeedInsights />
+        <Footer />
       </body>
     </html>
   );

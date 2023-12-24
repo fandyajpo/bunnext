@@ -1,3 +1,12 @@
+import Landing from "@/components/Landing";
+import RoomType from "@/components/Landing/RoomType";
+import Section from "@/components/Landing/Section";
 export default function Page() {
-  return <div className="p-8 bg-black h-screen">Hai Satrya</div>;
+  return (
+    <>
+      <Landing />
+      {/* <RoomType /> */}
+      <Section />
+    </>
+  );
 }

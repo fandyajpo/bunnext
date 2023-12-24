@@ -34,10 +34,10 @@ const Drawer = (props: Props) => {
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal">
               <li>
-                <a className="text-black">Navbar Item 1</a>
+                <a className="text-black font-semibold">About</a>
               </li>
               <li>
-                <a className="text-black">Navbar Item 2</a>
+                <a className="text-black font-semibold">Contact</a>
               </li>
             </ul>
           </div>
@@ -51,31 +51,11 @@ const Drawer = (props: Props) => {
           className="drawer-overlay"
         ></label>
         <ul className="menu p-4 w-80 min-h-full bg-white pt-16">
-          {/* <label
-            htmlFor="my-drawer-3"
-            aria-label="close sidebar"
-            className="drawer-overlay"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
-            </svg>
-          </label> */}
           <li>
-            <a>Sidebar Item 1</a>
+            <a>About</a>
           </li>
           <li>
-            <a>Sidebar Item 2</a>
+            <a>Contact</a>
           </li>
         </ul>
       </div>
